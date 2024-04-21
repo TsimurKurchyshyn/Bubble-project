@@ -60,8 +60,13 @@ var scores = [
     41, 53, 55, 61, 51, 44
 ];
 
+// Создаем переменную highScore которая в будуйщем будет отвечать за самый высокий вывод.
 var highScore = 0;
+
+// Создаем переменную output которая в будуйщем будет отвечать за вывод всех случившихся растворов.
 var output;
+
+// Создаем цикл который будет перебирать каждый елемент массива score.
 for (var i = 0; i < scores.length; i++) {
     output = "Bubble solution #" + i + " score: " + scores[i];
     console.log(output);
@@ -72,8 +77,10 @@ for (var i = 0; i < scores.length; i++) {
 console.log("Bubbles tests: " + scores.length);
 console.log("Highest bubble score: " + highScore);
 
+// Создаем переменную bestSolutions которая в будуйщем будет отвечать за лучшие растворы.
 var bestSolutions = [];
 
+// Создаем цикл который с использованием бывше сказаной переменной bestSolutions будет выводить самые лучшие растворы.
 for (var i = 0; i < scores.length; i++) {
     if (scores[i] == highScore) {
         bestSolutions.push(i);
