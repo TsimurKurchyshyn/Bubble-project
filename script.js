@@ -71,6 +71,15 @@ for (var i = 0; i < scores.length; i++) {
 }
 console.log("Bubbles tests: " + scores.length);
 console.log("Highest bubble score: " + highScore);
+
+var bestSolutions = [];
+
+for (var i = 0; i < scores.length; i++) {
+    if (scores[i] == highScore) {
+        bestSolutions.push(i);
+    }
+}
+console.log("Solutions with the highest score: " + bestSolutions);
     /*
     var scores = [60, 50, 60, 58, 54, 54,
     58, 50, 52, 54, 48, 69,
